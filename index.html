@@ -5,28 +5,24 @@
 	<!-- Include Bokeh JS and CSS -->
 	<link rel="stylesheet" href="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.2.min.css" type="text/css">
 	<script src="https://cdn.bokeh.org/bokeh/release/bokeh-3.3.2.min.js"></script>
-	<style>
-		/* Set the background of the heading */
-		.header {
-			background-image: ![Lion Header](/lca-speed-journal/assets/header.png);
-			background-size: cover;
-			color: navy;
-			padding: 50px;
-		}
-
-		/* Set the background of the main body */
-		.main {
-			background-image: ![Background](/lca-speed-journal.github.io/assets/background.png);
-			background-size: cover;
-			color: white;
-			padding: 50px;
-		}
-	</style>
+	
 </head>
 <body>
 	<!-- Main heading -->
 	<h1>LCA Speed Journal: 2023 Sprinting Data</h1>
 	<p>Practice Data collected for the 2023 Sprinters, displayed visually through graphs.</p>
+	<!-- Speed Trials section -->
+	<section>
+		<h3>Season Opener: 2023 LCA Speed Trials!</h3>
+		<p>A Recap of the T&F Season Opener: the inaugural Speed Trials had a positive turnout, and some friendly competition
+			offered a great introduction to our season. New technology was used, some discussion about the format of practices
+			looking at the season ahead, and an opportunity to look at where our athletes are beginning their season.
+			Measuring Vertical Jumps, 40m Dashes, and a 10m Fly, see below for the resultant data.</p>
+		<div class="bokeh-plot">
+			<!-- Embed Bokeh scatterplot JSON file for Progress Scatters -->
+			<script src="speed_trials.json"></script>
+		</div>
+	</section>
 	
 	<!-- Subheading -->
 	<h2>Team Statistics</h2>
