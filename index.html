@@ -13,7 +13,46 @@
 	<p>A hub for the Practice Data collected for the 2023 Sprinters, 
 		displayed visually through graphs and through bulleted summaries.<br>
 		A Training Logbook and a Progress Chart, all in one.</p>
-	<!-- Speed Trials section -->
+	
+	<!-- Subheading -->
+	<h2>Team Statistics</h2>
+	<p>Four Categories of Practice Progress: Speed Metrics, X-Factor, Meso-Testing, and Lactic. <br>
+		Each Practice, we measure one primary metric, depending on the category of the day. <br>
+		Speed Days, color-coded blue, are all about acceleration and top-speed. The 10m Fly, 30m Block Start, and 40m are used. <br>
+		X-Factor, color-coded pink, is all about power and athleticism. Six Bounds, Triple Broad Jumps, and Standing Triples are measured. <br>
+		Meso-Testing, color-coded purple, are metrics we measure at the top of every month. Vertical Jumps and Single-Leg Wall Sits are here. <br>
+		Lactic Metrics, color-coded orange, are the speed-endurance Days. Broken 300s, The 24/28s Drill, and the 600m 4x4 Predictor are used here. 
+	</p>
+
+	<!-- Progress Scatters section -->
+	<section>
+		<h3>Progress Scatters</h3>
+		<p>Data per Practice Metric, ranked by gendered percentile. Each metric has its own tab. <br> 
+			Hovering over a data point will give more information. Womens data is in red, Mens in blue. <br>
+		The Qualifying Bands, seen in the 10m Fly, correspond to speed benchmarks based on the EMAC Conference history. 
+			The upper-bound of the band represents a predicted ~8th place finish, while the lower-bound represents a ~3rd place finish. </p>
+		<iframe src="/assets/Bokeh/Week1.html"
+		    sandbox="allow-same-origin allow-scripts"
+		    width="100%"
+		    height="600"
+		    scrolling="no"
+		    seamless="seamless"
+		    frameborder="0">
+		</iframe>
+	</section>
+
+	<!-- Training Log section -->
+	<section>
+		<h3>Training Log</h3>
+		<p>A PDF Training Log of what our team has done across each week of the season.</p>
+		<iframe src="/assets/Bokeh/TrainingLog.pdf"
+	width="100%"
+	height="1200"
+	style="border:none"
+></iframe>
+	</section>
+
+<!-- Speed Trials section -->
 	<section>
 		<h3>Season Opener: 2023 LCA Speed Trials!</h3>
 		<p>A Recap of the T&F Season Opener: the inaugural Speed Trials had a positive turnout, and some friendly competition
@@ -30,47 +69,7 @@
 		    frameborder="0">
 		</iframe>
 	</section>
+		
 	
-	<!-- Subheading -->
-	<h2>Team Statistics</h2>
-	<p>Four Categories of Practice Progress:
-		Speed Metrics, X-Factor, Meso-Testing, and Lactate.</p>
-
-	<!-- Leaderboards section -->
-	<section>
-		<h3>Leaderboards</h3>
-		<p>A weekly "Practice Leaderboard". <br>
-			Points are assigned to top marks (10-8-6-5-4-3-2-1), and summed by gender, per athlete.
-		Hovering over a bar will give more data to the point totals.</p>
-		<div class="bokeh-plot">
-			<!-- Embed Bokeh scatterplot JSON file for Leaderboards -->
-			<script src="leaderboards.json"></script>
-		</div>
-	</section>
-
-	<!-- Progress Scatters section -->
-	<section>
-		<h3>Progress Scatters</h3>
-		<p>Data per Practice Metric, ranked in descending order of performance.</p>
-		<iframe src="/assets/Bokeh/Week1.html"
-		    sandbox="allow-same-origin allow-scripts"
-		    width="100%"
-		    height="600"
-		    scrolling="no"
-		    seamless="seamless"
-		    frameborder="0">
-		</iframe>
-	</section>
-
-	<!-- Training Log section -->
-	<section>
-		<h3>Training Log</h3>
-		<iframe src="/assets/Bokeh/TrainingLog.pdf"
-	width="100%"
-	height="1200"
-	style="border:none"
-></iframe>
-	</section>
-
 </body>
 </html>
