@@ -9,105 +9,16 @@
 </head>
 <body>
 	<!-- Main heading -->
-	<h1>LCA Speed Journal: 2023 Sprinting Data</h1>
-	<p>A hub for the Practice Data collected for the 2023 Sprinters, 
-		displayed visually through graphs and through bulleted summaries.<br>
-		A Training Logbook and a Progress Chart, all in one.</p>
-	
+	<h1>2023 Sprinting Data:</h1>
+		
 	<!-- Subheading -->
 	<h2>Team Statistics</h2>
 	<p>Four Categories of Practice Progress: <b>Speed Metrics, X-Factor, Meso-Testing, and Lactic</b>. <br>
-		Each Practice, we measure one primary metric, depending on the category of the day. <br>
-		Speed Days, color-coded blue, are all about acceleration and top-speed. The <b>10m Fly, 30m Block Start, and 40m</b> are used. <br>
-		X-Factor, color-coded pink, is all about power and athleticism. <b>Six Bounds, Triple Broad Jumps, and Standing Triple Jumps</b> are measured. <br>
-		Meso-Testing, color-coded purple, are metrics we measure at the top of every month. <b>Vertical Jumps and Single-Leg Wall Sits</b> are here. <br>
+		Speed Days (Blue), all about acceleration and top-speed. The <b>10m Fly, 30m Block Start, and 40m</b> are used. <br>
+		X-Factor (Pink) is all about power and athleticism. <b>Six Bounds, Triple Broad Jumps, and Standing Triple Jumps</b> are measured. <br>
+		Meso-Testing (Purple) are our monthly metrics. <b>Vertical Jumps and Single-Leg Wall Sits</b> are here. <br>
 		Lactic Metrics, color-coded orange, are the speed-endurance Days. Broken 300s, The <b>24/28s Drill, and the 600m 4x4 Predictor</b> are used here. 
 	</p>
-
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-radius: 10px;
-}
-</style>
-<style>
-mark_speed {
-  background-color: DeepSkyBlue;
-  color: black;
-}
-mark_xF {
-  background-color: LightCoral;
-  color: black;
-}	
-mark_meso {
-  background-color: Lavender;
-  color: black;
-}
-mark_lact {
-  background-color: Orange;
-  color: black;
-}
-</style>
-	
-	<!-- Season Records section -->
-	<hr>
-	<h2>Season Records</h2>
-
-	<p>The best of each metric, the fastest and the farthest.</p>
-
-	<table style="width:75%">
-	  <tr>
-	    <th>Metric</th>
-	    <th>Mens Season Record</th> 
-	    <th>Womens Season Record</th>
-	  </tr>
-	  <tr>
-	    <td><mark_speed>10m Fly</mark_speed></td>
-	    <td><b>0.98s</b>: Colin A (22.8mph)</td>
-	    <td><b>1.11s</b>: Lily D (20.1mph)</td>
-	  </tr>
-	  <tr>
-	    <td><mark_speed>30m Blocks</mark_speed></td>
-	    <td><b>3.40s</b>: Colin A </td>
-	    <td><b>4.13s</b>: Lily L </td>
-	  </tr>
-	  <tr>
-	    <td><mark_xF>Triple Broad Jump</mark_xF></td>
-	    <td><b>29.17ft</b>: Everett G</td>
-	    <td><b>25.33ft</b>: Sophia A</td>
-	  </tr>
-	  <tr>
-		  <td><mark_xF>Six Bounds</mark_xF></td>
-	    <td><b>52.64ft</b>: Colin A</td>
-	    <td><b>43.71ft</b>: Lily L</td>
-	  </tr>
-	  <tr>
-		  <td><mark_xF>Standing Triple Jump</mark_xF></td>
-	    <td><b>23.58ft</b>: Everett G</td>
-	    <td><b>19.96ft</b>: Sophia A</td>
-	  </tr>
-	<tr>
-		  <td><mark_lact>4x4 Predictor:</mark_Lact></td>
-	    <td><b>25.5s Mean (53s Prediction) </b>: Colin A</td>
-	    <td><b>27.5s Mean (57s Prediction) </b>: Sophia A</td>
-	  </tr>
-	<tr>
-		  <td><mark_lact>24/28s Drill:</mark_Lact></td>
-	    <td><b>191m </b>: Colin A</td>
-	    <td><b>197.5m </b>: Sophia A</td>
-	  </tr>
-	  <tr>
-	    <td><mark_meso>Vertical Jump</mark_meso></td>
-	    <td><b>23.75"</b>: Everett G</td>
-	    <td><b>17.3"</b>: Sophia A</td>
-	  </tr>
-	  <tr>
-	    <td><mark_meso>EUR (CMV/Paused Vert)</mark_meso></td>
-	    <td><b>1.19</b>: Will S</td>
-		  <td><b>1.3</b>: Malia S</td>
-	  </tr>
-	</table>
-	<hr>
 	
 	<!-- Progress Scatters section -->
 	<section>
@@ -133,37 +44,7 @@ mark_lact {
 		<img src="assets/images/Verticals.png" alt="Vertical Progress Boxplot">
 		<img src="assets/images/TopSpeed.png" alt="Top Speed Progress Boxplot">
 		<img src="assets/images/tBroads.png" alt="Triple Broad Progress Boxplot">
-
-		
-	<!-- Training Log section -->
-	<section>
-		<h3>Training Log</h3>
-		<p>A PDF Training Log of what our team has done across each week of the season.</p>
-		<iframe src="/assets/Bokeh/TrainingLog.pdf"
-	width="80%"
-	height="750"
-	style="border:none"
-></iframe>
-	</section>
-
-<!-- Speed Trials section -->
-	<section>
-		<h3>Season Opener: 2023 LCA Speed Trials!</h3>
-		<p>A Recap of the T&F Season Opener: the inaugural Speed Trials had a positive turnout, and some friendly competition
-			offered a great introduction to our season. <br>
-			New technology was used, some discussion about the format of practices looking at the season ahead,
-			and an opportunity to look at where our athletes are beginning their season. <br>
-			Measuring Vertical Jumps, 40m Dashes, and a 10m Fly, see below for the resultant data.</p>
-	<iframe src="/assets/Bokeh/speedTrials.html"
-		    sandbox="allow-same-origin allow-scripts"
-		    width="100%"
-		    height="600"
-		    scrolling="no"
-		    seamless="seamless"
-		    frameborder="0">
-		</iframe>	
-	</section>
-		
+	
 	
 </body>
 </html>
