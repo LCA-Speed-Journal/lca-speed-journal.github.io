@@ -50,10 +50,41 @@
             font-size: 2em; /* Adjust as needed */
             margin-bottom: 10px; /* Adjust the value to reduce the bottom margin */
         }
+
+        /* Styles for the button */
+        #navigateButton {
+            background-color: #173753; /* Green background color */
+            color: white; /* White text color */
+            padding: 10px 20px; /* Padding for better appearance */
+            font-size: 16px; /* Font size */
+            border-radius: 5px; /* Optional: Add border radius for rounded corners */
+            cursor: pointer; /* Add a pointer cursor on hover */
+        }
+
+        /* Hover effect for the button */
+        #navigateButton:hover {
+            background-color: #F1A41D; /* Dark Gold on hover */
+            color: #173753; /* Navy Text on Hover */
+        }
+
+        @media only screen and (max-width: 1100px) {
+            #navigateButton {
+                display: block; /* Show the button on mobile devices */
+            }
     </style>
 </head>
 
 <body>
+<!-- Button for navigation -->
+    <button id="navigateButton">Return to Stats</button>
+
+    <script>
+        // JavaScript for handling button click and navigation
+        document.getElementById('navigateButton').addEventListener('click', function () {
+            // Replace 'https://example.com' with your predetermined URL
+            window.location.href = 'https://lcaspeedjournal.wixsite.com/home/stats';
+        });
+    </script>
     <!-- 2023 Composite section -->
     <section>
         <h3>2023: Composite Data</h3>
