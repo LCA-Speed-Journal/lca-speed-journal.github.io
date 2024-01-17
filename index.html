@@ -51,8 +51,14 @@
             margin-bottom: 10px; /* Adjust the value to reduce the bottom margin */
         }
 
+        /* Styles for the button container */
+        #buttonContainer {
+            margin-top: 20px; /* Adjust the margin-top to add vertical space above the button */
+        }
+        
         /* Styles for the button */
         #navigateButton {
+            font-family: 'Montserrat', sans-serif; /* Use Montserrat as the font */
             background-color: #173753; /* Green background color */
             color: white; /* White text color */
             padding: 10px 20px; /* Padding for better appearance */
@@ -75,9 +81,10 @@
 </head>
 
 <body>
-<!-- Button for navigation -->
+<div id="buttonContainer">
+    <!-- Button for navigation with updated text -->
     <button id="navigateButton">Return to Stats</button>
-
+</div>
     <script>
         // JavaScript for handling button click and navigation
         document.getElementById('navigateButton').addEventListener('click', function () {
