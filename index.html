@@ -13,14 +13,18 @@
         body {
             /*Font*/
             font-family: 'Montserrat', sans-serif; /* Use Montserrat as the font */
-            font-size: 2vw; /* Adjust the value based on your preference */
+            font-size: 14px; /* Adjust the value based on your preference */
             /*Text Box*/
             margin: 0;
             padding: 0 25px;
             max-width: 1500px; /* Adjust the maximum width based on your preference */
             margin: 0 auto;
         }
-
+        @media (max-width: 1100px) {
+    body {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        }
+    }
         iframe {
             width: 1050px;
             height: 1400px;
