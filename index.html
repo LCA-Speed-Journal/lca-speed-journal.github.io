@@ -20,26 +20,17 @@
             
             /* Text Box */
             margin: 0;
-            padding: 0 25px;
-            max-width: 50vw; /* Adjust the maximum width based on your preference */
-            margin: 0 auto;
+            padding: 0 15px; /* Adjust padding for smaller screens */
             white-space: nowrap; /* Prevent text wrapping */
             overflow-x: auto; /* Enable horizontal scrolling */
             /*Color-Related:*/
             background-color: #FBEBB6;
         }
 
-        @media (max-width: 1100px) {
-            body {
-                font-size: 20px; /* Adjust font size for smaller screens */
-                max-width: 85vw;
-            }
-        }
-
         iframe {
-            width: 1050px;
-            height: 1400px;
-            margin-top: 25px
+            width: 100%; /* Make iframes fill the entire width */
+            height: 500px; /* Set a fixed height */
+            margin-top: 25px;
         }
 
         section {
@@ -47,7 +38,7 @@
         }
 
         h3 {
-            font-size: 2em; /* Adjust as needed */
+            font-size: 1.5em; /* Adjust as needed */
             margin-bottom: 10px; /* Adjust the value to reduce the bottom margin */
         }
 
@@ -72,20 +63,14 @@
             background-color: #F1A41D; /* Dark Gold on hover */
             color: #173753; /* Navy Text on Hover */
         }
-
-        @media only screen and (max-width: 1000px) {
-            #navigateButton {
-                display: block; /* Show the button on mobile devices */
-            }
-        }
     </style>
 </head>
 
 <body>
-<div id="buttonContainer">
-    <!-- Button for navigation with updated text -->
-    <button id="navigateButton">Return to Stats</button>
-</div>
+    <div id="buttonContainer">
+        <!-- Button for navigation with updated text -->
+        <button id="navigateButton">Return to Stats</button>
+    </div>
     <script>
         // JavaScript for handling button click and navigation
         document.getElementById('navigateButton').addEventListener('click', function () {
@@ -93,29 +78,24 @@
             window.location.href = 'https://lcaspeedjournal.wixsite.com/home/stats';
         });
     </script>
+    
     <!-- 2023 Composite section -->
     <section>
-    <h3>2023: Composite Data</h3>
-    <p>The Compiled 2023 Data for our Key Practice Metrics. Each metric has its own tab. <br>
-        Tapping on a data point (or hovering on desktop) will give more information. <br>
-    <div style="width: 100%; overflow: hidden;">
-        <div style="width: 100%; float: left;">
-            <iframe src="/assets/Bokeh/output_Leaderboard-Colors.html"
+        <h3>2023: Composite Data</h3>
+        <p>The Compiled 2023 Data for our Key Practice Metrics. Each metric has its own tab. <br>
+            Tapping on a data point (or hovering on desktop) will give more information. <br>
+        <iframe src="/assets/Bokeh/output_Leaderboard-Colors.html"
                 sandbox="allow-same-origin allow-scripts"
                 scrolling="no"
                 seamless="seamless"
                 frameborder="0">
-            </iframe>
-        </div>
-        <div style="width: 100%; float: left;">
-            <iframe src="/assets/Bokeh/output_Scatters_ColorTest.html"
+        </iframe>
+        <iframe src="/assets/Bokeh/output_Scatters_ColorTest.html"
                 sandbox="allow-same-origin allow-scripts"
                 scrolling="no"
                 seamless="seamless"
                 frameborder="0">
-            </iframe>
-        </div>
-    </div>
-</section>
+        </iframe>
+    </section>
 </body>
 </html>
