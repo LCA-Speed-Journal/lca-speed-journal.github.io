@@ -32,7 +32,7 @@
 
         iframe {
             width: 100%;
-            height: 1200px; /* Set a fixed height for mobile */
+            height: 2400px; /* Set a fixed height for mobile */
             margin-top: 25px;
             display: block;
             border: none;
@@ -90,12 +90,11 @@
             iframeDesktop.src = "/assets/Bokeh/4-8_Combined-Plots_Desktop.html"; // Set desktop source
             iframeDesktop.scrolling = "no";
             iframeDesktop.frameborder = "0";
-            iframeDesktop.style.height = "2300px"; // Set desktop height
             document.querySelector('section').appendChild(iframeDesktop);
         } else { // Choose mobile version
             var iframeMobile = document.createElement('iframe');
             iframeMobile.src = "/assets/Bokeh/output_Combined-Plots_ColorTest.html"; // Set mobile source
-            iframeMobile.scrolling = "no";
+            iframeMobile.scrolling = "yes";
             iframeMobile.frameborder = "0";
             document.querySelector('section').appendChild(iframeMobile);
         }
