@@ -67,13 +67,23 @@
         <!-- Button for navigation with updated text -->
         <button id="navigateButton">Return to Stats</button>
     </div>
+    
+    <!-- 2023 Composite section -->
+    <section>
+        <h3>2023: Composite Data</h3>
+        <p>The Compiled 2023 Data for our Key Practice Metrics. Each metric has its own tab. <br>
+            Tapping on a data point (or hovering on desktop) will give more information. <br>
+        </p>
+        <script>
+            // JavaScript for handling button click and navigation
+            document.getElementById('navigateButton').addEventListener('click', function () {
+                // Replace 'https://example.com' with your predetermined URL
+                window.location.href = 'https://lcaspeedjournal.wixsite.com/home/stats';
+            });
+        </script>
+    </section>
+    
     <script>
-        // JavaScript for handling button click and navigation
-        document.getElementById('navigateButton').addEventListener('click', function () {
-            // Replace 'https://example.com' with your predetermined URL
-            window.location.href = 'https://lcaspeedjournal.wixsite.com/home/stats';
-        });
-
         // JavaScript for dynamically choosing iframe based on screen resolution
         if (window.innerWidth >= 768) { // Choose desktop version
             var iframeDesktop = document.createElement('iframe');
