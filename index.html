@@ -87,13 +87,13 @@
         // JavaScript for dynamically choosing iframe based on screen resolution
         if (window.innerWidth >= 768) { // Choose desktop version
             var iframeDesktop = document.createElement('iframe');
-            iframeDesktop.src = "/assets/Bokeh/4-8_Combined-Plots_Desktop.html"; // Set desktop source
+            iframeDesktop.src = "/assets/Bokeh/4-10_Combined-Plots_Desktop.html"; // Set desktop source
             iframeDesktop.scrolling = "no";
             iframeDesktop.frameborder = "0";
             document.querySelector('section').appendChild(iframeDesktop);
         } else { // Choose mobile version
             var iframeMobile = document.createElement('iframe');
-            iframeMobile.src = "/assets/Bokeh/output_Combined-Plots_ColorTest.html"; // Set mobile source
+            iframeMobile.src = "/assets/Bokeh/4-10_Combined-Plots_Mobile.html.html"; // Set mobile source
             iframeMobile.scrolling = "yes";
             iframeMobile.frameborder = "0";
             document.querySelector('section').appendChild(iframeMobile);
