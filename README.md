@@ -22,7 +22,6 @@ Data is stored in `/data/sessions` as CSV files and loaded dynamically into the 
 ├── data/
 │ └── sessions/ # Drop your CSV data files here
 
-
 ---
 
 ## 📊 Data Format
