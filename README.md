@@ -14,13 +14,13 @@ Data is stored in `/data/sessions` as CSV files and loaded dynamically into the 
 ---
 
 ## 📂 File Structure
-├── Home.py # Main dashboard
-├── Leaderboards.py # Leaderboard pages
-├── Progression.py # Progression charts
-├── utils.py # Shared data loading & helpers
-├── requirements.txt # Python dependencies
-├── data/
-│ └── sessions/ # Drop your CSV data files here
+- Home.py # Main dashboard
+- Leaderboards.py # Leaderboard pages
+- Progression.py # Progression charts
+- utils.py # Shared data loading & helpers
+- requirements.txt # Python dependencies
+- data/
+ - └── sessions/ # Drop your CSV data files here
 
 ---
 
